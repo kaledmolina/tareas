@@ -59,12 +59,12 @@ public function mount()
         <div class="grid  card bg-base-300 rounded-box place-items-center">
             <table class="table">
                 <thead>
-                    <tr class="text-left ">
-                        <th class="px-4 py-2 text-xl">#</th>
-                        <th class="px-4 py-2 text-xl">Tarea</th>
-                        <th class="px-4 py-2 text-xl">Estado</th>
-                        <th class="px-4 py-2 text-xl">Acción</th>
-                        <th class="px-4 py-2 text-xl">Eliminar</th>
+                    <tr class="text-left">
+                        <th class="px-4 py-2 text-xl w-1/12 sm:w-2/12"> # </th>
+                        <th class="px-4 py-2 text-xl w-5/12 sm:w-7/12"> Tarea </th>
+                        <th class="px-4 py-2 text-xl w-2/12 sm:w-1/12"> Estado </th>
+                        <th class="px-4 py-2 text-xl w-2/12 sm:w-1/12"> Acción </th>
+                        <th class="px-4 py-2 text-xl sm:w-1/12 md:w-2/12 lg:w-1/12">Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -90,7 +90,7 @@ public function mount()
                                 <button class="btn btn-error" wire:click="delete({{ $todo->id }})">Borrar</button>
                             </td>
                             @else
-                            <td>
+                            <td class="px-4 py-2 sm:w-1/12 md:w-2/12 lg:w-1/12">
                                 <button class="btn btn-error opacity-50 cursor-not-allowed" disabled>Borrar</button>
                             </td>
                             @endif
